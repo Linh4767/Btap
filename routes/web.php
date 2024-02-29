@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/page1',function(){
-    return view('page1');
+    return view('pag
+    e1');
 });
 Route::get('/page2',function(){
     return view('page1');
