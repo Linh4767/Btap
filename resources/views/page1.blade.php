@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    {{"NGUYEN TAN TAI NE"}}
+    {{"TAN TAI NE"}}
 </body>
 </html>
