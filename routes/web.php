@@ -12,7 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('admin/{age}', function(string $age){
+//     return "Ban du tuoi truy cap trang nay";
+// })->whereNumber('age')->middleware('checkage');
 
-Route::get('/{name?}', function ($name = "welcome") {
-    return view(@$name);
-});
+
+Route::post('/login', function (){
+    return view('demo');
+})->middleware('checklogin')->name("check");
+
+Route::get('/login', function (){
+    return view('login');
+})->name("login");
+
+
+
+

@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    {{"CHÀO TAN TAI NE"}}
+    {{"LOGIN THÀNH CÔNG"}}
 </body>
 </html>
