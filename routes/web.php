@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ use App\Http\Controllers\SignUp;
 Route::get('/', [SignUp::class, 'index']);
 Route::get('/signup', [SignUp::class, 'signup']);
 Route::post('process', [SignUp::class, 'process']);
-
+Route::resource('photo', PhotoController::class);
 
 Route::post('/login', function (){
     return view('demo');
